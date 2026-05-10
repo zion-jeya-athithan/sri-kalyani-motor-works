@@ -6,64 +6,69 @@ function App() {
       <div className="absolute top-0 left-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-orange-500/20 blur-[120px] rounded-full"></div>
 
       {/* TOP HEADER */}
-      <div className="w-full bg-zinc-950 border-b border-white/10 text-sm text-gray-300 relative z-50">
+      {/* TOP HEADER */}
+<div className="w-full bg-zinc-950 border-b border-white/10 text-sm text-gray-300 relative z-50">
 
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col lg:flex-row justify-between items-center gap-3">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col lg:flex-row justify-between items-center gap-3">
 
-          {/* Address */}
-          <div className="flex items-center gap-2 text-center lg:text-left hover:text-orange-500 transition">
-            <span className="text-orange-500">📍</span>
+    {/* LEFT SIDE */}
+    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
 
-            <p>
-              Sri Kalyani Motor Works, Chennai, Tamil Nadu
-            </p>
-          </div>
+      {/* Address */}
+      <div className="flex items-center gap-2 hover:text-orange-500 transition">
 
-          {/* Working Hours */}
-          <div className="flex items-center gap-2 hover:text-orange-500 transition">
-            <span className="text-orange-500">🕒</span>
+        <span className="text-orange-500">📍</span>
 
-            <p>
-              Mon - Sat : 9:00 AM - 8:00 PM
-            </p>
-          </div>
-
-          {/* Social Media */}
-          <div className="flex items-center gap-5">
-
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-500 transition"
-            >
-              Facebook
-            </a>
-
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-500 transition"
-            >
-              Instagram
-            </a>
-
-            <a
-              href="https://wa.me/919999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-500 transition"
-            >
-              WhatsApp
-            </a>
-
-          </div>
-
-        </div>
+        <p className="text-sm md:text-[15px]">
+          4/43E/5, Om Shanthi Nagar, Tuticorin
+        </p>
 
       </div>
 
+      {/* Working Hours */}
+      <div className="flex items-center gap-2 hover:text-orange-500 transition">
+
+        <span className="text-orange-500">🕒</span>
+
+        <p className="text-sm md:text-[15px]">
+          Working Hours :
+          <span className="font-bold ml-2">
+            Mon to Sat (9am - 7pm)
+          </span>
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="flex items-center gap-5">
+
+      {/* Facebook */}
+      <a
+        href="https://www.facebook.com/100063835130594/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-500 transition text-lg"
+      >
+        Facebook
+      </a>
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/srikalyanitraders?igsh=MXYxc2t5amNhaHg0dQ=="
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-500 transition text-lg"
+      >
+        Instagram
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
       {/* Navbar */}
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/50 border-b border-white/10">
 
