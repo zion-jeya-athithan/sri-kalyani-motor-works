@@ -3,19 +3,48 @@ function App() {
     <div className="bg-gradient-to-b from-black via-zinc-950 to-black text-white min-h-screen overflow-x-hidden">
 
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-800">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-white/10">
+
         <div className="flex justify-between items-center px-8 py-5">
+
           <h1 className="text-3xl font-extrabold tracking-wide text-orange-500">
             Sri Kalyani Motor Works
           </h1>
 
           <div className="space-x-8 hidden md:flex text-gray-300 font-medium">
-            <a href="#" className="hover:text-orange-500 transition">Home</a>
-            <a href="#" className="hover:text-orange-500 transition">Services</a>
-            <a href="#" className="hover:text-orange-500 transition">About</a>
-            <a href="#" className="hover:text-orange-500 transition">Contact</a>
+
+            <a
+              href="#"
+              className="relative hover:text-orange-500 transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300"
+            >
+              Home
+            </a>
+
+            <a
+              href="#services"
+              className="relative hover:text-orange-500 transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300"
+            >
+              Services
+            </a>
+
+            <a
+              href="#about"
+              className="relative hover:text-orange-500 transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300"
+            >
+              About
+            </a>
+
+            <a
+              href="#contact"
+              className="relative hover:text-orange-500 transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-orange-500 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300"
+            >
+              Contact
+            </a>
+
           </div>
+
         </div>
+
       </nav>
 
       {/* Hero Section */}
@@ -29,43 +58,49 @@ function App() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl">
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-5xl">
 
           <p className="text-orange-500 uppercase tracking-[6px] mb-5 text-sm">
             Premium Automobile Care
           </p>
 
-          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
-            Drive With <span className="text-orange-500">Confidence</span>
+          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight mb-8 bg-gradient-to-r from-white via-orange-300 to-orange-500 bg-clip-text text-transparent">
+            Drive With Confidence
           </h2>
 
-          <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Expert vehicle servicing, diagnostics, engine repair,
-            and premium maintenance solutions with trusted mechanics.
+          <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-8">
+            Expert vehicle servicing, engine diagnostics, brake repair,
+            premium maintenance, and trusted automobile solutions
+            for modern drivers.
           </p>
 
           <div className="flex flex-col md:flex-row gap-5 justify-center">
 
-            <button className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-2xl text-lg font-semibold transition duration-300 shadow-lg shadow-orange-500/30">
+            <button className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-2xl text-lg font-semibold transition duration-300 shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:scale-105">
               Book Service
             </button>
 
-            <button className="border border-gray-600 hover:border-orange-500 hover:text-orange-500 px-10 py-4 rounded-2xl text-lg transition duration-300">
+            <button className="border border-gray-600 hover:border-orange-500 hover:text-orange-500 px-10 py-4 rounded-2xl text-lg transition duration-300 hover:scale-105">
               Explore Services
             </button>
 
           </div>
 
         </div>
+
       </section>
 
-      {/* Services */}
-      <section className="px-8 md:px-16 py-24 bg-zinc-950">
+      {/* Services Section */}
+      <section
+        id="services"
+        className="px-8 md:px-16 py-28 bg-zinc-950"
+      >
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
+
           <p className="text-orange-500 uppercase tracking-[4px] mb-3">
             What We Offer
           </p>
@@ -73,56 +108,103 @@ function App() {
           <h2 className="text-5xl font-bold">
             Premium Services
           </h2>
+
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
 
           {/* Card 1 */}
-          <div className="bg-zinc-900/80 backdrop-blur-lg p-10 rounded-3xl border border-gray-800 hover:border-orange-500 transition duration-300 hover:-translate-y-2">
+          <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:border-orange-500 transition duration-500 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(249,115,22,0.25)]">
 
-            <div className="text-5xl mb-6">⚙️</div>
+            <div className="text-6xl mb-6">
+              ⚙️
+            </div>
 
-            <h3 className="text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-5">
               Engine Repair
             </h3>
 
-            <p className="text-gray-400 leading-7">
-              Advanced engine diagnostics, repair, and performance
-              optimization with modern tools and expert technicians.
+            <p className="text-gray-400 leading-8">
+              Advanced engine diagnostics and repair services
+              using modern tools and experienced mechanics.
             </p>
 
           </div>
 
           {/* Card 2 */}
-          <div className="bg-zinc-900/80 backdrop-blur-lg p-10 rounded-3xl border border-gray-800 hover:border-orange-500 transition duration-300 hover:-translate-y-2">
+          <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:border-orange-500 transition duration-500 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(249,115,22,0.25)]">
 
-            <div className="text-5xl mb-6">🛢️</div>
+            <div className="text-6xl mb-6">
+              🛢️
+            </div>
 
-            <h3 className="text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-5">
               Oil Service
             </h3>
 
-            <p className="text-gray-400 leading-7">
-              Premium quality oil replacement and complete vehicle
-              maintenance for smooth and efficient performance.
+            <p className="text-gray-400 leading-8">
+              Premium oil replacement and complete vehicle
+              maintenance for smoother driving performance.
             </p>
 
           </div>
 
           {/* Card 3 */}
-          <div className="bg-zinc-900/80 backdrop-blur-lg p-10 rounded-3xl border border-gray-800 hover:border-orange-500 transition duration-300 hover:-translate-y-2">
+          <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:border-orange-500 transition duration-500 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(249,115,22,0.25)]">
 
-            <div className="text-5xl mb-6">🚗</div>
+            <div className="text-6xl mb-6">
+              🚗
+            </div>
 
-            <h3 className="text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-5">
               Brake Service
             </h3>
 
-            <p className="text-gray-400 leading-7">
-              Reliable brake inspection, maintenance, and repair
-              solutions for maximum driving safety.
+            <p className="text-gray-400 leading-8">
+              Complete brake inspection and reliable repair
+              solutions ensuring maximum driving safety.
             </p>
 
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="py-28 px-8 md:px-16 bg-black"
+      >
+
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+
+          <div>
+
+            <p className="text-orange-500 uppercase tracking-[4px] mb-4">
+              About Us
+            </p>
+
+            <h2 className="text-5xl font-bold mb-8 leading-tight">
+              Trusted Automobile Experts
+            </h2>
+
+            <p className="text-gray-400 text-lg leading-9">
+              Sri Kalyani Motor Works provides premium automobile
+              repair and maintenance services with skilled mechanics,
+              advanced diagnostics, and customer-first service.
+              We ensure quality, reliability, and performance for
+              every vehicle we handle.
+            </p>
+
+          </div>
+
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc"
+              alt="Workshop"
+              className="rounded-3xl shadow-2xl"
+            />
           </div>
 
         </div>
@@ -130,7 +212,7 @@ function App() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 px-8 bg-black">
+      <section className="py-24 px-8 bg-zinc-950">
 
         <div className="grid md:grid-cols-4 gap-10 text-center">
 
@@ -138,36 +220,77 @@ function App() {
             <h2 className="text-5xl font-extrabold text-orange-500 mb-3">
               10+
             </h2>
-            <p className="text-gray-400">Years Experience</p>
+            <p className="text-gray-400">
+              Years Experience
+            </p>
           </div>
 
           <div>
             <h2 className="text-5xl font-extrabold text-orange-500 mb-3">
               5000+
             </h2>
-            <p className="text-gray-400">Vehicles Serviced</p>
+            <p className="text-gray-400">
+              Vehicles Serviced
+            </p>
           </div>
 
           <div>
             <h2 className="text-5xl font-extrabold text-orange-500 mb-3">
               100%
             </h2>
-            <p className="text-gray-400">Customer Satisfaction</p>
+            <p className="text-gray-400">
+              Customer Satisfaction
+            </p>
           </div>
 
           <div>
             <h2 className="text-5xl font-extrabold text-orange-500 mb-3">
               24/7
             </h2>
-            <p className="text-gray-400">Support</p>
+            <p className="text-gray-400">
+              Support
+            </p>
           </div>
 
         </div>
 
       </section>
 
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="py-28 px-8 text-center bg-black"
+      >
+
+        <p className="text-orange-500 uppercase tracking-[4px] mb-4">
+          Contact Us
+        </p>
+
+        <h2 className="text-5xl font-bold mb-8">
+          Let’s Service Your Vehicle
+        </h2>
+
+        <p className="text-gray-400 text-lg mb-10">
+          Contact Sri Kalyani Motor Works for premium automobile care.
+        </p>
+
+        <button className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-2xl text-lg font-semibold transition duration-300 shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:scale-105">
+          Contact Now
+        </button>
+
+      </section>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/919999999999"
+        target="_blank"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 p-5 rounded-full shadow-lg text-2xl z-50 transition hover:scale-110"
+      >
+        💬
+      </a>
+
       {/* Footer */}
-      <footer className="border-t border-gray-800 py-8 text-center text-gray-500">
+      <footer className="border-t border-white/10 py-8 text-center text-gray-500">
         © 2026 Sri Kalyani Motor Works. All Rights Reserved.
       </footer>
 
