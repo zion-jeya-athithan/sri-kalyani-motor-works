@@ -3,8 +3,56 @@ function App() {
     <div className="bg-black text-white overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-500/20 blur-[120px] rounded-full"></div>
+      {/* TOP HEADER */}
+<div className="w-full bg-zinc-950 border-b border-white/10 text-sm text-gray-300">
 
+  <div className="max-w-7xl mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center gap-3">
+
+    {/* Left Side - Address */}
+    <div className="flex items-center gap-2 hover:text-orange-500 transition">
+      <span className="text-orange-500">📍</span>
+      <p>
+        Sri Kalyani Motor Works, Chennai, Tamil Nadu
+      </p>
+    </div>
+
+    {/* Center - Working Hours */}
+    <div className="flex items-center gap-2 hover:text-orange-500 transition">
+      <span className="text-orange-500">🕒</span>
+      <p>
+        Mon - Sat : 9:00 AM - 8:00 PM
+      </p>
+    </div>
+
+    {/* Right Side - Social Media */}
+    <div className="flex items-center gap-5">
+
+      <a
+        href="#"
+        className="hover:text-orange-500 transition text-lg"
+      >
+        Facebook
+      </a>
+
+      <a
+        href="#"
+        className="hover:text-orange-500 transition text-lg"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="#"
+        className="hover:text-orange-500 transition text-lg"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
@@ -218,11 +266,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
 
           <h1 className="text-2xl font-bold">
-            Sri Kalyani Motor Works
+            Sri Kalyani Motor Works 
           </h1>
 
           <p className="text-gray-500 mt-4 md:mt-0">
-            © 2026 All Rights Reserved
+           Sri Kalyani Motor Works © 1985 All Rights Reserved
           </p>
 
         </div>
