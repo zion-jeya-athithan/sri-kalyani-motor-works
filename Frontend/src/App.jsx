@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen overflow-x-hidden">
+    <div className="bg-gradient-to-b from-black via-zinc-950 to-black text-white min-h-screen overflow-x-hidden">
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-800">
